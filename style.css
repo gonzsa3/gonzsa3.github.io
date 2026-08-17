@@ -1053,4 +1053,100 @@ a:focus-visible {
     outline-offset: 4px;
 
     border-radius: 6px;
+}/* =========================================================
+   RESUME DROPDOWN
+========================================================= */
+
+.resume-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.resume-button {
+    border: none;
+    cursor: pointer;
+
+    background: #14532D;
+    color: white;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow:
+        0 8px 20px rgba(20, 83, 45, 0.15);
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.resume-button:hover {
+    background: #166534;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(20, 83, 45, 0.2);
+}
+
+.resume-options {
+    display: none;
+
+    position: absolute;
+
+    top: calc(100% + 8px);
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    min-width: 190px;
+
+    background: white;
+
+    border: 1px solid #E5E7EB;
+
+    border-radius: 12px;
+
+    padding: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.12);
+
+    z-index: 100;
+}
+
+.resume-dropdown:hover .resume-options {
+    display: flex;
+
+    flex-direction: column;
+}
+
+.resume-options a {
+    text-decoration: none;
+
+    color: #374151;
+
+    padding: 11px 14px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.resume-options a:hover {
+    background: #F0FDF4;
+
+    color: #14532D;
 }
