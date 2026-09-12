@@ -701,3 +701,350 @@ nav a:hover {
 .about-text p:last-child {
     margin-bottom: 0;
 }
+/* =========================================================
+   PROJECT INTERACTIVE CARD
+========================================================= */
+.project {
+    padding: 140px 10%;
+    border-top: 1px solid var(--border-smooth);
+}
+
+.project-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 80px;
+}
+
+.project-header h2 {
+    font-size: 40px;
+    color: var(--primary-core);
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+    font-weight: 800;
+}
+
+.project-header p {
+    font-size: 19px;
+    color: var(--text-muted);
+}
+
+.project-card {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 70px;
+    align-items: center;
+    background: transparent;
+}
+
+.project-image {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 14px;
+    border: 1px solid var(--border-smooth);
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(20, 83, 45, 0.02);
+    transition: transform var(--duration-fluid) var(--easing-premium), border-color var(--duration-fluid) var(--easing-premium), box-shadow var(--duration-fluid) var(--easing-premium);
+}
+
+.project-card:hover .project-image img {
+    border-color: var(--primary-core);
+    box-shadow: 0 20px 40px rgba(20, 83, 45, 0.06);
+}
+
+.project-image img:hover {
+    transform: scale(1.02);
+}
+
+.project-info h3 {
+    font-size: 36px;
+    color: var(--primary-core);
+    margin-bottom: 12px;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+}
+
+.project-info h4 {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.project-info p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--text-body);
+    margin-bottom: 36px;
+}
+
+/* Grilla de Tecnologías - Micro-interacciones Líquidas */
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 44px;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 16px 20px;
+    background: var(--white);
+    border: 1px solid var(--border-smooth);
+    border-radius: 10px;
+    transition: border-color var(--duration-fluid) var(--easing-premium), background-color var(--duration-fluid) var(--easing-premium), box-shadow var(--duration-fluid) var(--easing-premium);
+}
+
+.tech-item:hover {
+    border-color: var(--primary-neon);
+    background-color: var(--primary-subtle);
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.08);
+}
+
+.tech-item strong {
+    font-size: 14px;
+    color: var(--primary-core);
+    font-weight: 700;
+}
+
+.tech-item small {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+/* Enlaces Orgánicos Estilizados */
+.project-buttons {
+    display: flex;
+    gap: 40px;
+}
+
+.project-buttons a, .cert-link {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-core);
+    position: relative;
+    padding-bottom: 4px;
+    transition: color var(--duration-fluid) var(--easing-premium);
+}
+
+.project-buttons a::after, .cert-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-core);
+    transition: width var(--duration-fluid) var(--easing-premium);
+}
+
+.project-buttons a:hover::after, .cert-link:hover::after {
+    width: 100%;
+}
+
+/* =========================================================
+   SKILLS GRID SYSTEM
+========================================================= */
+.skills {
+    padding: 140px 10%;
+    border-top: 1px solid var(--border-smooth);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid var(--border-smooth);
+    transition: border-color var(--duration-fluid) var(--easing-premium), box-shadow var(--duration-fluid) var(--easing-premium);
+}
+
+.skill-card:hover {
+    border-color: var(--primary-neon);
+    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.05);
+}
+
+.skill-card h3 {
+    font-size: 22px;
+    color: var(--primary-core);
+    margin-bottom: 12px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: var(--text-body);
+    line-height: 1.6;
+}
+/* =========================================================
+   EDUCATION & CERTIFICATIONS (Symmetric Parallel Grid)
+========================================================= */
+.education {
+    padding: 140px 10%;
+    border-top: 1px solid var(--border-smooth);
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+.education-group {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.group-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    padding-left: 4px;
+}
+
+.education-card {
+    background: var(--white);
+    padding: 36px;
+    border-radius: 14px;
+    border: 1px solid var(--border-smooth);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    transition: border-color var(--duration-fluid) var(--easing-premium), box-shadow var(--duration-fluid) var(--easing-premium);
+}
+
+.education-card:hover {
+    border-color: var(--primary-neon);
+    box-shadow: 0 12px 30px rgba(34, 197, 94, 0.05);
+}
+
+/* Badges de Estado Limpios */
+.card-status-badge {
+    display: inline-flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #b45309;
+    background: #fef3c7;
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+.card-status-badge.completed {
+    color: #15803d;
+    background: #dcfce7;
+}
+
+.education-card h3 {
+    font-size: 22px;
+    color: var(--primary-core);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.education-card h4 {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.education-card p {
+    font-size: 15px;
+    color: var(--text-body);
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+/* Enlaces de Certificados con Flechas Independientes */
+.cert-link {
+    margin-top: auto;
+}
+
+.cert-link .arrow {
+    display: inline-block;
+    margin-left: 4px;
+    transition: transform var(--duration-fluid) var(--easing-premium);
+}
+
+.cert-link:hover .arrow {
+    transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   MAIN FOOTER (Perfect Realignment)
+========================================================= */
+.main-footer {
+    padding: 80px 10% 60px;
+    border-top: 1px solid var(--border-smooth);
+    background: var(--white);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-core);
+    letter-spacing: -0.02em;
+}
+
+.main-footer p {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.footer-tagline {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--primary-core);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 968px) {
+    nav { padding: 24px 5%; }
+    .about, .project-card, .skills-grid, .education-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .hero-content h1 { font-size: 48px; }
+    .hero-content h2 { font-size: 20px; }
+}
