@@ -529,3 +529,175 @@ nav a:hover {
     font-weight: 500;
     color: var(--text-muted);
 }
+/* =========================================================
+   HERO INTERACTIVE SECTION
+========================================================= */
+.hero {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10%;
+}
+
+.hero-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 28px;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    color: var(--primary-core);
+    letter-spacing: -0.04em;
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.hero-content h2 {
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--text-body);
+    letter-spacing: -0.01em;
+}
+
+.hero-content p {
+    max-width: 700px;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--text-muted);
+}
+
+/* Contenedor de Botones - Alineación Perfecta */
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 12px;
+}
+
+/* Enlace Contacto Base */
+.buttons > a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 32px;
+    background: var(--primary-core);
+    color: var(--white);
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid transparent;
+    transition: background-color var(--duration-fluid) var(--easing-premium), border-color var(--duration-fluid) var(--easing-premium);
+}
+
+.buttons > a:hover {
+    background: var(--primary-hover);
+}
+
+/* Dropdown de Currículum Refinado */
+.resume-dropdown {
+    position: relative;
+}
+
+.resume-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    padding: 0 28px;
+    background: var(--white);
+    border: 1px solid var(--border-smooth);
+    color: var(--text-title);
+    border-radius: 8px;
+    font-family: var(--font-stack);
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: border-color var(--duration-fluid) var(--easing-premium), background-color var(--duration-fluid) var(--easing-premium);
+}
+
+.resume-dropdown:hover .resume-button {
+    border-color: var(--primary-core);
+    background: var(--primary-subtle);
+}
+
+.resume-options {
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: var(--white);
+    border: 1px solid var(--border-smooth);
+    border-radius: 8px;
+    min-width: 190px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--duration-fluid) var(--easing-premium), transform var(--duration-fluid) var(--easing-premium);
+    box-shadow: 0 10px 30px rgba(20, 83, 45, 0.04);
+    z-index: 20;
+}
+
+.resume-dropdown:hover .resume-options {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+.resume-options a {
+    display: block;
+    padding: 12px 20px;
+    font-size: 14px;
+    color: var(--text-body);
+    font-weight: 500;
+    transition: background-color var(--duration-fluid) var(--easing-premium), color var(--duration-fluid) var(--easing-premium);
+}
+
+.resume-options a:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.resume-options a:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.resume-options a:hover {
+    background-color: var(--primary-subtle);
+    color: var(--primary-core);
+}
+
+/* =========================================================
+   ABOUT ME SECTION
+========================================================= */
+.about {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    padding: 140px 10%;
+    border-top: 1px solid var(--border-smooth);
+}
+
+.about-title h2 {
+    font-size: 40px;
+    color: var(--primary-core);
+    letter-spacing: -0.03em;
+    font-weight: 800;
+}
+
+.about-text p {
+    font-size: 19px;
+    line-height: 1.8;
+    color: var(--text-body);
+    margin-bottom: 24px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
