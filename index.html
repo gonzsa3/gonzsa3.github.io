@@ -5,225 +5,232 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gonzalo Mariatti — Digital Marketing, Artificial Intelligence and Workflow Automation.">
     <title>Gonzalo Mariatti | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">GM</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="contact.html">Contact</a></li>
+    <!-- NAVIGATION -->
+    <nav class="nav-container">
+        <div class="logo">GM<span class="dot">.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#project" class="nav-item">Project</a></li>
+            <li><a href="#skills" class="nav-item">Skills</a></li>
+            <li><a href="#education" class="nav-item">Education</a></li>
+            <li><a href="contact.html" class="nav-item nav-cta">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hero -->
+    <!-- HERO SECTION -->
     <section class="hero">
         <div class="hero-content">
+            <div class="hero-badge">Available for Opportunities</div>
             <h1>Gonzalo Mariatti</h1>
-            <h2>Digital Marketing • AI • Workflow Automation</h2>
+            <h2>Digital Marketing <span class="divider">•</span> AI <span class="divider">•</span> Workflow Automation</h2>
             <p>
-                I'm interested in using AI and digital tools to solve practical problems,
-                simplify repetitive tasks and find more efficient ways to work.
+                I interpret technology as a tool to solve complex problems. Specialized in deploying artificial intelligence systems and automated workflows to eliminate friction and maximize operational efficiency.
             </p>
-            <div class="buttons">
-                <!-- Resume Dropdown -->
+            <div class="hero-actions">
                 <div class="resume-dropdown">
-                    <button class="resume-button">Resume ▾</button>
+                    <button class="btn btn-secondary">
+                        Get Resume 
+                        <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
                     <div class="resume-options">
-                        <a href="assets/documents/resume-es.pdf" target="_blank">🇪🇸 Spanish Resume</a>
-                        <a href="assets/documents/resume-en.pdf" target="_blank">🇬🇧 English Resume</a>
+                        <a href="assets/documents/resume-es.pdf" target="_blank">
+                            <span class="flag">🇪🇸</span> Spanish Version
+                        </a>
+                        <a href="assets/documents/resume-en.pdf" target="_blank">
+                            <span class="flag">🇬🇧</span> English Version
+                        </a>
                     </div>
                 </div>
-                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Let's Connect</a>
             </div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- ABOUT ME -->
     <section id="about" class="about">
-        <div class="about-title">
+        <div class="section-title-block">
+            <span class="section-index">01 //</span>
             <h2>About Me</h2>
         </div>
-        <div class="about-text">
+        <div class="about-grid-content">
             <p>
-                I'm a Digital Marketing & Advertising student with a growing interest
-                in Artificial Intelligence, research and workflow automation.
+                I am a Digital Marketing & Advertising student pivoting deeply into systems automation and Artificial Intelligence research. My approach bridges strategic communication with backend execution.
             </p>
             <p>
-                I enjoy finding ways to make repetitive tasks simpler and more efficient.
-                I'm especially interested in using AI and digital tools to turn processes
-                that normally take time and manual work into something more organized
-                and easier to manage.
+                I engineer automated architectures that transform manual, time-consuming operations into smooth, programmatic systems. I focus heavily on reducing process friction and optimizing data workflows.
             </p>
             <p>
-                Most of my practical experience so far comes from personal projects,
-                where I learn by building, testing and improving real solutions.
-                Job Analyzer AI is one example of that approach.
+                Every project I build is an iteration of real-world troubleshooting. From configuring local microservices to prompting large language models, I design solutions with scalability and precision in mind.
             </p>
         </div>
     </section>
 
-    <!-- Personal Project -->
+    <!-- PERSONAL PROJECT -->
     <section id="project" class="project">
-        <div class="project-header">
-            <h2>Personal Project</h2>
-            <p>
-                A practical automation project created to simplify a repetitive daily
-                task while learning AI and workflow automation through real experience.
-            </p>
+        <div class="section-title-block central">
+            <span class="section-index">// 02</span>
+            <h2>Featured System</h2>
         </div>
 
-        <div class="project-card">
-            <!-- Project Images -->
-            <div class="project-image">
-                <img src="assets/images/workflw.png" alt="Job Analyzer AI workflow built with n8n">
-                <img src="assets/images/sheet.png" alt="Google Sheets results from the Job Analyzer AI project">
+        <div class="project-grid-layout">
+            <div class="project-visuals">
+                <div class="img-wrapper">
+                    <img src="assets/images/workflw.png" alt="Job Analyzer AI workflow built with n8n">
+                </div>
+                <div class="img-wrapper">
+                    <img src="assets/images/sheet.png" alt="Google Sheets results from the Job Analyzer AI project">
+                </div>
             </div>
 
-            <!-- Project Information -->
-            <div class="project-info">
+            <div class="project-details">
+                <div class="project-meta">Production Environment</div>
                 <h3>Job Analyzer AI</h3>
-                <h4>Automating the repetitive process of finding and reviewing relevant remote job opportunities.</h4>
+                <h4>Automating structured remote job scanning, data mining, and LLM triage.</h4>
                 <p>
-                    Looking for remote jobs every day quickly became repetitive.
-                    I built this workflow to automate that process: it collects
-                    LinkedIn job alerts, retrieves the information from each
-                    opportunity, analyzes them with AI according to my own criteria,
-                    and organizes the results in Google Sheets so I can review
-                    them more easily.
+                    Manually auditing job boards introduces operational inefficiency. I built an autonomous workflow that scrapes target LinkedIn job alerts via headless execution, orchestrates multi-agent filtering, and runs a semantic evaluation with AI models against predefined profiles to store normalized data seamlessly.
                 </p>
 
-                <!-- Technologies -->
-                <div class="tech-stack">
-                    <div class="tech-item">
+                <div class="tech-bento-grid">
+                    <div class="tech-bento-item">
                         <strong>n8n</strong>
-                        <small>Workflow automation</small>
+                        <small>Core Orchestration</small>
                     </div>
-                    <div class="tech-item">
+                    <div class="tech-bento-item">
                         <strong>Docker</strong>
-                        <small>Local environment</small>
+                        <small>Containerized Stack</small>
                     </div>
-                    <div class="tech-item">
+                    <div class="tech-bento-item">
                         <strong>Google Gemini</strong>
-                        <small>AI-based analysis</small>
+                        <small>Semantic Triage</small>
                     </div>
-                    <div class="tech-item">
+                    <div class="tech-bento-item">
                         <strong>Playwright</strong>
-                        <small>Job information retrieval</small>
+                        <small>Headless Scraping</small>
                     </div>
-                    <div class="tech-item">
+                    <div class="tech-bento-item">
                         <strong>Google Sheets</strong>
-                        <small>Data organization</small>
+                        <small>Data Warehouse</small>
                     </div>
-                    <div class="tech-item">
+                    <div class="tech-bento-item">
                         <strong>Vibe Coding</strong>
-                        <small>AI-assisted development</small>
+                        <small>AI-Driven Speed</small>
                     </div>
                 </div>
 
-                <!-- Project Links -->
-                <div class="project-buttons">
-                    <a href="assets/documents/jobai.docx" target="_blank">Documentation</a>
-                    <a href="https://github.com/gonzsa3" target="_blank">GitHub</a>
+                <div class="project-interactive-links">
+                    <a href="assets/documents/jobai.docx" target="_blank" class="text-link">
+                        Read Documentation <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
+                    <a href="https://github.com/gonzsa3" target="_blank" class="text-link">
+                        Source Repository <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- SKILLS -->
     <section id="skills" class="skills">
-        <div class="section-header">
-            <h2>Skills</h2>
-            <p>Areas I'm currently developing through study and practical projects.</p>
+        <div class="section-title-block central">
+            <span class="section-index">// 03</span>
+            <h2>Core Competencies</h2>
         </div>
 
-        <div class="skills-grid">
-            <div class="skill-card">
+        <div class="skills-matrix">
+            <div class="matrix-card">
+                <div class="matrix-icon">📊</div>
                 <h3>Digital Marketing</h3>
-                <p>Digital marketing, advertising and market research, with a focus on practical digital applications.</p>
+                <p>Data-backed communication architectures, digital advertising models, advanced market validation, and research data acquisition.</p>
             </div>
-
-            <div class="skill-card">
+            <div class="matrix-card">
+                <div class="matrix-icon">🤖</div>
                 <h3>Artificial Intelligence</h3>
-                <p>Exploring practical applications of AI for research, productivity, problem solving and everyday tasks.</p>
+                <p>Systematic workflow deployment of LLMs, programmatic orchestration, advanced prompt framing, and context optimization.</p>
             </div>
-
-            <div class="skill-card">
+            <div class="matrix-card">
+                <div class="matrix-icon">⚙️</div>
                 <h3>Workflow Automation</h3>
-                <p>Building automated workflows with n8n to connect tools, organize information and reduce repetitive manual work.</p>
+                <p>Designing linear and branching logic inside self-hosted n8n infrastructure, service mapping, and data normalization.</p>
             </div>
-
-            <div class="skill-card">
-                <h3>Research & Data</h3>
-                <p>Web research, information gathering, organization, market research and prospect research.</p>
+            <div class="matrix-card">
+                <div class="matrix-icon">🔍</div>
+                <h3>Research & Analytics</h3>
+                <p>Deep OSINT web scraping, market tracking, target mapping, information synthesis, and structured reporting schemas.</p>
             </div>
         </div>
     </section>
-    <!-- Education & Certifications -->
+
+    <!-- EDUCATION -->
     <section id="education" class="education">
-        <div class="section-header">
-            <h2>Education & Certifications</h2>
-            <p>My current academic path and recent professional specializations.</p>
+        <div class="section-title-block central">
+            <span class="section-index">// 04</span>
+            <h2>Academic & Specializations</h2>
         </div>
 
-        <div class="education-grid">
-            <!-- Academic Column -->
-            <div class="education-group">
-                <span class="group-label">University Studies</span>
+        <div class="double-timeline-grid">
+            <!-- Academic Formation Column -->
+            <div class="timeline-column">
+                <h3 class="column-header-title">Academic Formation</h3>
                 
-                <div class="education-card">
-                    <div class="card-status-badge">Currently studying</div>
-                    <h3>Digital Marketing & Advertising</h3>
-                    <h4>Universidad Siglo 21</h4>
-                    <p>Focus on digital marketing strategies, communication models, public advertising campaigns, and market research.</p>
+                <div class="timeline-node-card">
+                    <span class="status-indicator progression">Active Timeline</span>
+                    <div class="node-time">Universidad Siglo 21</div>
+                    <h4>Digital Marketing & Advertising</h4>
+                    <p>Advanced study of corporate communication matrixes, user behavioral psychology, and consumer audience validation channels.</p>
                 </div>
             </div>
 
-            <!-- Certifications Column -->
-            <div class="education-group">
-                <span class="group-label">Specializations</span>
+            <!-- Professional Certifications Column -->
+            <div class="timeline-column">
+                <h3 class="column-header-title">Professional Certifications</h3>
 
-                <div class="education-card">
-                    <div class="card-status-badge completed">Completed</div>
-                    <h3>AI & Productivity</h3>
-                    <h4>EducaciónIT</h4>
-                    <p>Practical application of AI models and advanced digital tools to optimize personal and professional productivity workflows.</p>
+                <div class="timeline-node-card">
+                    <span class="status-indicator standard">Verified</span>
+                    <div class="node-time">EducaciónIT</div>
+                    <h4>AI & Enterprise Productivity</h4>
+                    <p>Configuring multi-model environments and automated workflows to accelerate operational outputs and data ingestion.</p>
                 </div>
 
-                <div class="education-card">
-                    <div class="card-status-badge completed">Completed</div>
-                    <h3>Power BI Data Analysis</h3>
-                    <h4>Fundación YPF</h4>
-                    <p>Data cleaning, modeling, and interactive visualization dashboard creation for business intelligence workflows.</p>
-                    <a href="assets/documents/powerbicurso.pdf" target="_blank" class="cert-link">
-                        View Certificate <span class="arrow">↗</span>
+                <div class="timeline-node-card">
+                    <span class="status-indicator ypf">Fundación YPF</span>
+                    <div class="node-time">Business Intelligence</div>
+                    <h4>Power BI Data Analysis</h4>
+                    <p>Advanced extract, transform, and load (ETL) pipelines, data modeling, DAX querying, and interactive metric deployment.</p>
+                    <a href="assets/documents/powerbicurso.pdf" target="_blank" class="node-secure-link">
+                        Secure Credential <span class="link-arrow">↗</span>
                     </a>
                 </div>
 
-                <div class="education-card">
-                    <div class="card-status-badge completed">Completed</div>
-                    <h3>Practical Prompt Engineering</h3>
-                    <h4>Fundación YPF</h4>
-                    <p>Advanced context framing, prompt structuring techniques, and systematic interaction with large language models.</p>
-                    <a href="assets/documents/promptcurso.pdf" target="_blank" class="cert-link">
-                        View Certificate <span class="arrow">↗</span>
+                <div class="timeline-node-card">
+                    <span class="status-indicator ypf">Fundación YPF</span>
+                    <div class="node-time">Prompt Engineering</div>
+                    <h4>Practical Prompt Design</h4>
+                    <p>Engineering complex context boundaries, behavioral constraints, few-shot conditioning, and algorithmic outputs from language models.</p>
+                    <a href="assets/documents/promptcurso.pdf" target="_blank" class="node-secure-link">
+                        Secure Credential <span class="link-arrow">↗</span>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="main-footer">
-        <div class="footer-content">
-            <span class="footer-logo">GM</span>
-            <p>&copy; 2026 Gonzalo Mariatti. All rights reserved.</p>
-            <p class="footer-tagline">Digital Marketing • AI • Workflow Automation</p>
+    <!-- FOOTER -->
+    <footer class="footer-system">
+        <div class="footer-inner">
+            <div class="footer-brand">GM<span class="dot">.</span></div>
+            <p class="footer-legal">&copy; 2026 Gonzalo Mariatti. Compiled for maximum system performance.</p>
+            <div class="footer-tags">
+                <span>STRATEGY</span>
+                <span>AUTOMATION</span>
+                <span>INTELLIGENCE</span>
+            </div>
         </div>
     </footer>
 
