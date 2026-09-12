@@ -1048,3 +1048,107 @@ nav a:hover {
     .hero-content h1 { font-size: 48px; }
     .hero-content h2 { font-size: 20px; }
 }
+/* =========================================================
+   CONTACT PAGE SPECIFIC STYLES
+========================================================= */
+.contact-page {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10%;
+}
+
+.contact-container {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+}
+
+.contact-logo {
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary-core);
+    letter-spacing: -0.03em;
+    margin-bottom: 8px;
+}
+
+.contact-container h1 {
+    font-size: 42px;
+    color: var(--primary-core);
+    letter-spacing: -0.03em;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: var(--text-muted);
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.contact-item-link {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-title);
+    position: relative;
+    padding-bottom: 4px;
+    transition: color var(--duration-fluid) var(--easing-premium);
+}
+
+.contact-item-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-core);
+    transition: width var(--duration-fluid) var(--easing-premium);
+}
+
+.contact-item-link:hover {
+    color: var(--primary-core);
+}
+
+.contact-item-link:hover::after {
+    width: 100%;
+}
+
+.contact-item-link .arrow {
+    display: inline-block;
+    font-size: 14px;
+    color: var(--text-muted);
+    transition: transform var(--duration-fluid) var(--easing-premium), color var(--duration-fluid) var(--easing-premium);
+}
+
+.contact-item-link:hover .arrow {
+    transform: translate(2px, -2px);
+    color: var(--primary-core);
+}
+
+.back-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: color var(--duration-fluid) var(--easing-premium), transform var(--duration-fluid) var(--easing-premium);
+    margin-top: 16px;
+}
+
+.back-link:hover {
+    color: var(--primary-core);
+    transform: translateX(-4px);
+}
