@@ -5,43 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Contact Gonzalo Mariatti — Digital Marketing, AI and Workflow Automation.">
     <title>Contact | Gonzalo Mariatti</title>
-    <link rel="stylesheet" href="style.css?v=2.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* =========================================================
+           CONTACT SPECIFIC PROTOCOL (Anti-invisibility Patch)
+        ========================================================= */
+        .contact-page {
+            min-height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 10%;
+            background-color: #07090E;
+        }
+
+        .contact-container {
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 28px;
+        }
+
+        .contact-logo {
+            font-size: 32px;
+            font-weight: 800;
+            color: #10B981;
+            letter-spacing: -0.03em;
+        }
+
+        .contact-container h1 {
+            font-size: 42px;
+            color: #F9FAFB;
+            letter-spacing: -0.03em;
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        .contact-subtitle {
+            font-size: 19px;
+            color: #9CA3AF;
+            max-width: 500px;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 36px;
+            margin: 12px 0 24px;
+            flex-wrap: wrap;
+        }
+
+        /* Enlaces de Redes de Alta Visibilidad Nítida */
+        .contact-item-link {
+            font-size: 16px;
+            font-weight: 700;
+            color: #F9FAFB; /* Asegura visibilidad permanente */
+            position: relative;
+            padding-bottom: 6px;
+            transition: color 450ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .contact-item-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #10B981;
+            transition: width 450ms cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .contact-item-link:hover {
+            color: #10B981;
+        }
+
+        .contact-item-link:hover::after {
+            width: 100%;
+        }
+
+        .contact-item-link .arrow {
+            display: inline-block;
+            font-size: 14px;
+            color: #9CA3AF;
+            transition: transform 450ms cubic-bezier(0.16, 1, 0.3, 1), color 450ms cubic-bezier(0.16, 1, 0.3, 1);
+            margin-left: 2px;
+        }
+
+        .contact-item-link:hover .arrow {
+            transform: translate(3px, -3px);
+            color: #10B981;
+        }
+
+        .back-link {
+            font-size: 15px;
+            font-weight: 600;
+            color: #9CA3AF;
+            transition: color 450ms cubic-bezier(0.16, 1, 0.3, 1), transform 450ms cubic-bezier(0.16, 1, 0.3, 1);
+            margin-top: 16px;
+        }
+
+        .back-link:hover {
+            color: #10B981;
+            transform: translateX(-4px);
+        }
+    </style>
 </head>
 <body>
 
     <main class="contact-page">
         <div class="contact-container">
             
-            <div class="contact-logo">GM<span class="dot">.</span></div>
+            <div class="contact-logo">GM</div>
 
             <h1>Interested in what you saw?</h1>
             
             <p class="contact-subtitle">
-                I am continuously monitoring automated channels. Choose a communication matrix to start an operational dialogue.
+                I'd be happy to talk about my projects, interests or future opportunities.
             </p>
 
-            <div class="contact-matrix-links">
-                <a href="https://www.linkedin.com/in/gonzalo-mariatti-254738309/" target="_blank" rel="noopener noreferrer" class="matrix-anchor">
-                    <span class="anchor-label">LinkedIn</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            <div class="contact-links">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                    LinkedIn <span class="arrow">↗</span>
                 </a>
 
-                <a href="mailto:gonzaa9.2005@gmail.com" class="matrix-anchor">
-                    <span class="anchor-label">Email</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                <a href="mailto:gonzaa9.2005@gmail.com" class="contact-item-link">
+                    Email <span class="arrow">↗</span>
                 </a>
 
-                <a href="https://wa.me/543468599987" target="_blank" rel="noopener noreferrer" class="matrix-anchor">
-                    <span class="anchor-label">WhatsApp</span>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+                <a href="https://wa.me" target="_blank" rel="noopener noreferrer" class="contact-item-link">
+                    WhatsApp <span class="arrow">↗</span>
                 </a>
             </div>
 
-            <a href="index.html" class="terminal-back-btn">
-                <span class="cmd-prompt">~</span> return_to_portfolio
+            <a href="index.html" class="back-link">
+                ← Back to portfolio
             </a>
 
         </div>
